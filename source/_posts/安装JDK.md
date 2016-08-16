@@ -1,7 +1,9 @@
 ---
 title: 安装JDK
 date: 2016-08-16 13:15:51
-tags: java
+tags: 
+- java
+- 安装
 ---
 
 ## 下载
@@ -15,25 +17,25 @@ tags: java
 
 ### 1. 向导
 直接点下一步即可
-![向导](/images/setup1.png)
+![向导](/images/jdk-setup/setup1.png)
 
 ### 2. 定制安装
 选择安装的程序, 安装的地址
-![定制安装](/images/setup2.jpg)
+![定制安装](/images/jdk-setup/setup2.jpg)
 
 ### 3. 安装进度
-![安装进度](/images/setup3.png)
+![安装进度](/images/jdk-setup/setup3.png)
 
 ### 4. 选择jre安装的地址
-![选择jre安装的地址](/images/setup4.png)
-![选择jre安装的地址](/images/setup5.png)
+![选择jre安装的地址](/images/jdk-setup/setup4.png)
+![选择jre安装的地址](/images/jdk-setup/setup5.png)
 
 ### 5. 完成
 ![完成](/images/setup6.png)
 
 ### 6. 测试安装是否完成
 打开cmd, 敲入`java -version` 看到下图就说明安装成功了.
-![测试安装是否完成](/images/setup7.png)
+![测试安装是否完成](/images/jdk-setup/setup7.png)
 
 ## 设置
 ### 1. 设置环境变量
@@ -45,4 +47,4 @@ tags: java
 
 ### 2. 测试环境变量是否设置完成
 打开cmd, 敲入`javac -version` 看到下图就说明环境变量设置成功了.
-![测试环境变量是否设置完成](/images/setup8.png)
+![测试环境变量是否设置完成](/images/jdk-setup/setup8.png)
