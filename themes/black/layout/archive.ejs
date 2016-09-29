@@ -1,0 +1,8 @@
+文章列表页
+<div class="articles">
+    <% page.posts.each(function(post, i){ %>
+    <div class="article">
+        <a href="<%- url_for(post.path) %>"><%= post.title %> -- <%= post.date %></a>
+    </div>
+    <% }) %>
+</div>

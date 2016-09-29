@@ -1,0 +1,88 @@
+@import "color";
+
+
+*{
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html, body{
+  width: 100%;
+  height: 100%;
+  color: #EEEEEE;
+  font-family:'Monda', "PingFang SC", "Microsoft YaHei", sans-serif, serif;
+}
+
+::selection, ::-moz-selection {
+  background-color: $default-yellow;
+  color: $default-white;
+}
+
+body{
+  background: $background-color;
+}
+
+a{
+  color: $default-white;
+  text-decoration: none;
+  :hover{
+    color: $default-yellow;
+  }
+}
+
+#container{
+  min-height: 100%;
+}
+
+.left-side{
+  position: fixed;
+  z-index: 1;
+  background: $background-color;
+  width: 300px;
+  height: 100%;
+  text-align: center;
+  border: 1px solid $default-yellow;
+  padding: 20px 10px;
+  .avatar{
+    img{
+      width: 100px;
+      height: 100px;
+      -webkit-border-radius:50%;
+      -moz-border-radius:50%;
+      border-radius:50%;
+    }
+  }
+
+  .motto{
+    margin-top: 10px;
+    color: $default-blue;
+  }
+
+  .menus{
+    margin-top: 10px;
+    list-style: none;
+    li{
+      height: 40px;
+      line-height: 40px;
+      vertical-align: middle;
+      :hover{
+        a{
+          color: $default-yellow;
+        }
+      }
+    }
+  }
+}
+
+.major{
+  min-height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 50px 50px 50px 350px;
+}
+
+

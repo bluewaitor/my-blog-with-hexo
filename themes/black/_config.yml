@@ -1,0 +1,39 @@
+# Header
+menu:
+  不露: /
+  文章: /archives
+rss: /atom.xml
+
+# Content
+excerpt_link: Read More
+fancybox: true
+
+# Sidebar
+sidebar: right
+widgets:
+- category
+- tag
+- tagcloud
+- archive
+- recent_posts
+
+# display widgets at the bottom of index pages (pagination == 2)
+index_widgets:
+# - category
+# - tagcloud
+# - archive
+
+# widget behavior
+archive_type: 'monthly'
+show_count: false
+
+# Miscellaneous
+google_analytics:
+favicon: /favicon.png
+twitter:
+google_plus:
+fb_admins:
+fb_app_id:
+
+avatar: 'https://avatars0.githubusercontent.com/u/7811233?v=3&s=466'
+motto: '寻求你真正的兴趣所在，如此方能孜孜不倦，精益求精。'

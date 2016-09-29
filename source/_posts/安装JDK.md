@@ -31,7 +31,7 @@ tags:
 ![选择jre安装的地址](/images/jdk-setup/setup5.png)
 
 ### 5. 完成
-![完成](/images/setup6.png)
+![完成](/images/jdk-setup/setup6.png)
 
 ### 6. 测试安装是否完成
 打开cmd, 敲入`java -version` 看到下图就说明安装成功了.

@@ -1,10 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>111</title>
+  <meta charset="utf-8">
+  <%
+  var title = page.title;
+
+  if (is_archive()){
+    title = __('archive_a');
+
+    if (is_month()){
+      title += ': ' + page.year + '/' + page.month;
+    } else if (is_year()){
+      title += ': ' + page.year;
+    }
+  } else if (is_category()){
+    title = __('category') + ': ' + page.category;
+  } else if (is_tag()){
+    title = __('tag') + ': ' + page.tag;
+  }
+  %>
+  <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <% if (theme.favicon){ %>
+  <link rel="icon" href="<%- theme.favicon %>">
+  <% } %>
+
+  <%- css('css/style') %>
 </head>
+
 <body>
-    <%- body %>
+  <div id="container">
+    <div id="wrap">
+      <div class="left-side">
+
+        <div class="avatar">
+          <% if(theme.avatar){%>
+            <img src="<%=theme.avatar%>" alt="">
+          <%}%>
+        </div>
+
+        <% if(theme.motto){ %>
+        <p class="motto"><%- theme.motto %></p>
+        <% }%>
+        <ul class="menus">
+          <% for (var i in theme.menu){ %>
+          <li>
+            <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+          </li>
+          <% } %>
+        </ul>
+
+      </div>
+      <div class="major">
+        <section id="main"><%- body %></section>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
